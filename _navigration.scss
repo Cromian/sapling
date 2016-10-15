@@ -1,0 +1,37 @@
+// _navigration.scss
+.navbar {
+  background-color: $lp-color-dblue;
+  color: white;
+  width: 100%;
+  display: block;
+  vertical-align: center;
+  min-height: 59px;
+
+  ul {
+    margin: 0;
+    padding: 0;
+
+    @media only screen and (min-width : $xsmall-break) {
+      display: none;
+    }
+
+    @media only screen and (min-width : $medium-break) {
+      display: block;
+    }
+  }
+
+  li {
+    display: inline;
+
+    a {
+      position: relative;
+      padding: 16px;
+      display: inline-block;
+
+      &:hover {
+        background-color: black;
+      }
+    }
+
+  }
+}

@@ -1,0 +1,22 @@
+// General Variables
+$body-size: 100%;
+$one-col: $body-size / 12;
+
+// Media Breaks
+$xsmall-break: 300px;
+$small-break: 600px;
+$medium-break: 900px;
+$large-break: 1200px;
+$xlarge-break: 1600px;
+
+// Colors --- Insperation from http://clrs.cc/a11y/
+// * Light Pallet (lp) *
+$lp-color-lblue: #0098ef; // light blue
+$lp-color-blue: #0077d3;  // blue
+$lp-color-dblue: #00203d; // dark blue
+$lp-color-green: #009a73;
+$lp-color-red: #ff2b3a;
+$lp-color-pink: #ff00b8;
+$lp-color-maroon: #940049;
+$lp-color-black: #101010;
+$lp-color-grey: #d0d2d2;
