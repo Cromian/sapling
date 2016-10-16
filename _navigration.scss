@@ -26,12 +26,28 @@
     a {
       position: relative;
       padding: 16px;
-      display: inline-block;
+
+      @media only screen and (min-width : $xsmall-break) {
+        display: block;
+      }
+
+      @media only screen and (min-width : $medium-break) {
+        display: inline-block;
+      }
 
       &:hover {
         background-color: black;
       }
     }
+  }
+}
 
+#mobile-menu {
+  @media only screen and (min-width : $xsmall-break) {
+    display: block;
+  }
+
+  @media only screen and (min-width : $medium-break) {
+    display: none;
   }
 }
