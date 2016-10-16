@@ -6,11 +6,11 @@
   display: block;
   vertical-align: center;
   min-height: 59px;
+  overflow: hidden;
 
   ul {
     margin: 0;
     padding: 0;
-
 
     @media only screen and (min-width : $xsmall-break) {
       display: none;
@@ -52,6 +52,7 @@
   cursor: pointer;
   display: block;
   height: 59px;
+  width: 59px;
 
   @media only screen and (min-width : $xsmall-break) {
     display: block;
