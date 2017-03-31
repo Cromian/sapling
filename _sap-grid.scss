@@ -1,10 +1,7 @@
-//_grid.scss
-
 @mixin grid-float {
   float: left;
   min-height: 1px;
   box-sizing: border-box;
-  padding: 8px;
 }
 
 .row {
@@ -13,7 +10,6 @@
     display: table;
     clear:both;
    }
-   padding-bottom: 5px;
 }
 
 [class^="col-"], [class^="ban-"] {
@@ -106,13 +102,13 @@
 
  /* Large Devices, Wide Screens */
  @media only screen and (min-width : $large-break) {
-   .ban-1, .ban-3 {
-     width: $body-size * .75;
-   }
+  //  .ban-1, .ban-3 {
+  //    width: $body-size * .75;
+  //  }
 
-   .ban-2 {
-     width: $body-size * .25;
-   }
+  //  .ban-2 {
+  //    width: $body-size * .25;
+  //  }
 
    .col-12 {
      width: $one-col * 12;
@@ -165,10 +161,28 @@
 
 @media only screen and (min-width : $xlarge-break) {
   .ban-1 {
-    width: $body-size * .75;
+    width: $body-size;
   }
 
-  .ban-2, .ban-3 {
-    width: $body-size * .125;
+  .wrapper {
+      width: $xlarge-break;
+      margin: auto;
+    }
+
+  .ban-2 {
+    width: $body-size * .25;
+  }
+
+  // If 3 bans are needed
+  // .ban-2, .ban-3 {
+  //   width: $body-size * .125;
+  // }
+
+}
+
+@media only screen and (min-width : $xlarge-break + 1) {
+  .wrapper {
+    width: $xlarge-break;
+    margin: auto;
   }
 }
