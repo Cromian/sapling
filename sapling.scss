@@ -1,114 +1,17 @@
-@import "_variables.scss";
-@import "_grid.scss";
-@import "_tables.scss";
-@import "_navigration.scss";
-@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css";
+// General Variables
+$body-size: 100%;
+$one-col: $body-size / 12;
 
-@mixin font-style {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 400;
-}
+// Media Breaks
+$xsmall-break: 300px;
+$small-break: 600px;
+$medium-break: 900px;
+$large-break: 1200px;
+$xlarge-break: 1600px;
 
-@mixin button-style {
-  @include font-style;
-  display: block;
-  color: white;
-  border: none;
-  cursor: pointer;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  font-size: 20px;
-}
+@import '_sap-grid.scss';
 
-html {
-  font-size: 16px;
-
-  @media only screen and (min-width : $xsmall-break) {
-    line-height: 23px;
-  }
-
-  @media only screen and (min-width : $small-break) {
-    line-height: 25px;
-
-  }
-
-  @media only screen and (min-width : $medium-break) {
-    line-height: 28px;
-  }
-
-  @media only screen and (min-width : $large-break) {
-    line-height: 30px;
-  }
-
-  @media only screen and (min-width : $xlarge-break) {
-    line-height: 33px;
-  }
-}
-
-body {
-  @include font-style;
-  color: $lp-color-dblue;
+html, body {
   margin: 0;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  @include font-style;
-  margin-top: .5%;
-}
-
-h1 {
-  font-size: 42px;
-}
-
-h2 {
-  font-size: 26px;
-}
-
-h3 {
-  font-size: 20px;
-}
-
-hr {
-  border: 0;
-  border-top: 1px solid $lp-color-grey;
-}
-
-a {
-  cursor: pointer;
-  &:link, &:visited {
-    color: $lp-color-blue;
-    text-decoration: none;
-  }
-
-  &:hover {
-    color: $lp-color-lblue;
-    text-decoration: underline;
-  }
-}
-
-button, .btn {
-  @include button-style;
-  background-color: $lp-color-blue;
-  margin: auto;
-
-  @media only screen and (min-width : $xsmall-break) {
-    width: 100%;
-  }
-
-  @media only screen and (min-width : $small-break) {
-    width: 70%;
-  }
-
-  @media only screen and (min-width : $medium-break) {
-    width: 25%;
-    max-width: 330px;
-  }
-
-  &:hover {
-    background-color: $lp-color-lblue;
-    text-decoration: none;
-  }
-
+  padding: 0;
 }
