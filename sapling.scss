@@ -10,8 +10,4 @@ $large-break: 1200px;
 $xlarge-break: 1600px;
 
 @import '_sap-grid.scss';
-
-html, body {
-  margin: 0;
-  padding: 0;
-}
+@import '_sap-text.scss';
