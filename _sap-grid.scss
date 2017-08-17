@@ -17,7 +17,7 @@
 }
 
 @media only screen and (min-width : 0px) {
-    .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+    .ban-1, .ban-2, .ban-3, .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
         width: $one-col * 12;
     }
 }
@@ -48,12 +48,20 @@
 }
 
 @media only screen and (min-width : 700px) {
-    .col-1, .col-2 {
-        width: $one-col * 2; 
+    .col-1 {
+        width: $one-col * 3;
     }
 
-    .col-10, .col-11 {
-        width: $one-col * 10;                
+    .col-2 {
+        width: $one-col * 4; 
+    }
+
+    .col-10 {
+        width: $one-col * 8;         
+    }
+
+    .col-11 {
+        width: $one-col * 9;                
     }
 }
 
@@ -67,7 +75,7 @@
     }
 
     .col-9 {
-        width: $one-col * 9;
+        width: $one-col * 9;                        
     }
 
     .col-11 {
