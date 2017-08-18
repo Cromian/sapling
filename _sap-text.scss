@@ -1,0 +1,66 @@
+$base-font: 1.1vw;
+$golden_ratio: 1.618;
+
+body {
+
+    @media only screen and (min-width : 0px) {
+        font-size: $base-font * ($golden_ratio * 2);   
+    }
+
+    @media only screen and (min-width : $medium-break) {
+        font-size: $base-font * ($golden_ratio * 1.5);       
+    }
+
+    @media only screen and (min-width : $large-break) {
+        font-size: $base-font * ($golden_ratio * 1.3);   
+        
+    }
+
+    @media only screen and (min-width : $large-break + 100) {
+        font-size: $base-font * ($golden_ratio * 1);
+    }
+}
+
+p {
+    max-width: 75vw;
+    text-align: left;    
+    margin: auto;
+
+    // @media only screen and (min-width : $small-break) {
+    //     line-height: 4vw * 1.1;       
+    // }
+
+    @media only screen and (min-width : $large-break) {
+        line-height: 3vw;        
+    }
+
+    
+
+    // @media only screen and (max-width : $medium-break) {
+    //     line-height: 4vw * 1.5;       
+    // }
+    
+    // @media only screen and (min-width : $medium-break) {
+    //     line-height: 4vw / 1.5;       
+    // }
+}
+
+h1 {
+    font-size: $base-font * ($golden_ratio * 3);
+}
+
+h2 {
+    font-size: $base-font * ($golden_ratio * 2.5);
+}
+
+h3 {
+    font-size: $base-font * ($golden_ratio * 2);
+}
+
+h4 {
+    font-size: $base-font * ($golden_ratio * 1.5);
+}
+
+h5 {
+    font-size: $base-font * ($golden_ratio * 1);
+}
