@@ -3,6 +3,11 @@
     box-sizing: border-box;
 }
 
+.container {
+    max-width: $xx-large-break;
+    margin: auto;
+} 
+
 .row {
    &:before, &:after {
     content:"";
@@ -19,7 +24,7 @@
 
 // 0px
 @media only screen and (min-width : 0px) {
-    .ban-1, .ban-2, .ban-3, .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+    .ban-1, .ban-2, .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
         width: $one-col * 12;
     }
 }
@@ -96,22 +101,17 @@
     }
 }
 
-// 1400px
+// 1600px
 @media only screen and (min-width : $x-large-break) {
-    .ban-1 {
-        width: 75%;  
-    }
-    .ban-2 {
-        width: 25%;  
+    .ban-1, .ban-2 {
+        width: 50%;  
     }
 }
 
 // 1800px
 @media only screen and (min-width : $xx-large-break) {
-    .ban-1 {
-        width: 75%;  
-    }
-    .ban-2, .ban-3 {
-        width: 12.5%;  
+    .ban-1, .ban-2 {
+        max-width: 2000px;
+        margin: auto;  
     }
 }
